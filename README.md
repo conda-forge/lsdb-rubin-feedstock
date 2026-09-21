@@ -40,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `lsdb-rubin` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install lsdb-rubin
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install lsdb-rubin
 ```
 
-It is possible to list all of the versions of `lsdb-rubin` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add lsdb-rubin
+# for installing globally
+pixi global install lsdb-rubin
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `lsdb-rubin` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search lsdb-rubin --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search lsdb-rubin --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search lsdb-rubin --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -76,6 +118,8 @@ mamba repoquery whoneeds lsdb-rubin --channel conda-forge
 # List dependencies of `lsdb-rubin`:
 mamba repoquery depends lsdb-rubin --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge

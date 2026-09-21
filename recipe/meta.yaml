@@ -1,5 +1,5 @@
 {% set name = "lsdb-rubin" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/lsdb_rubin-{{ version }}.tar.gz
-  sha256: 6f2e4742fd419b2a4d7077a73de52808ba1cfeee3e369e8e122133f307e807e4
+  sha256: 62fa7a91a95a4ecaea7c61ae1129c6ed4298ad66e9843fdbcb7be5b283515427
 
 build:
   noarch: python
